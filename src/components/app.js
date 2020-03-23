@@ -30,7 +30,7 @@ export default class App extends Component {
 					</Router>
 				</div>
 				<x-example></x-example>
-				<element-preact>aa</element-preact>
+				<element-preact name="Monde">aa</element-preact>
 			</>
 		);
 	}
