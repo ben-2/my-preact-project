@@ -6,7 +6,7 @@ import Header from './header';
 // Code-splitting is automated for routes
 import Home from '../routes/home';
 import Profile from '../routes/profile';
-import { HelloComp } from '../webcomponents/hello.js';
+import RegisterCustomComponents from '../custom-webcomponents';
 
 export default class App extends Component {
 
@@ -30,6 +30,7 @@ export default class App extends Component {
 					</Router>
 				</div>
 				<x-example></x-example>
+				<element-preact>aa</element-preact>
 			</>
 		);
 	}

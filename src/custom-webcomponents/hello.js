@@ -12,4 +12,12 @@ export class HelloComp extends Component {
 	}
 }
 
-customElements.define("x-example", HelloComp);
+export class ElementPreact extends Component {
+  static props = {
+    name: String
+  };
+  name = 'World';
+  render() {
+    return `<span>Hello, ${this.name}! From <slot></slot></span>`;
+  }
+}
